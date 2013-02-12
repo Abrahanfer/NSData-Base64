@@ -1,9 +1,10 @@
 //
-//  NSData+Base64.m
-//  base64
+//  NSData+Base64.m Version 2.0
+//  base64 version 2.0(Forked from NSData-Base64 project of Matt Gallagher)
 //
 //  Created by Matt Gallagher on 2009/06/03.
 //  Copyright 2009 Matt Gallagher. All rights reserved.
+//  Copyright (c) 2013 Abrahán Fernández <abrahanfer@gmail.com>. All rights reserved.
 //
 //  This software is provided 'as-is', without any express or implied
 //  warranty. In no event will the authors be held liable for any damages
@@ -301,11 +302,10 @@ char *NewBase64Encode(
 		NewBase64Encode([self bytes], [self length], true, &outputLength);
 	
 	NSString *result =
-		[[[NSString alloc]
+		[[NSString alloc]
 			initWithBytes:outputBuffer
 			length:outputLength
-			encoding:NSASCIIStringEncoding]
-		autorelease];
+			encoding:NSASCIIStringEncoding];
 	free(outputBuffer);
 	return result;
 }
@@ -318,11 +318,10 @@ char *NewBase64Encode(
     NewBase64Encode([self bytes], [self length], separateLines, &outputLength);
 	
 	NSString *result =
-    [[[NSString alloc]
+    [[NSString alloc]
       initWithBytes:outputBuffer
       length:outputLength
-      encoding:NSASCIIStringEncoding]
-     autorelease];
+      encoding:NSASCIIStringEncoding];
 	free(outputBuffer);
 	return result;
 }
