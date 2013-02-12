@@ -1,5 +1,5 @@
 //
-//  NSData+Base64.m Version 2.0
+//  Base64Utils.m Version 2.0
 //  base64 version 2.0(Forked from NSData-Base64 project of Matt Gallagher)
 //
 //  Created by Matt Gallagher on 2009/06/03.
@@ -22,7 +22,7 @@
 //     distribution.
 //
 
-#import "NSData+Base64.h"
+#import "Base64Utils.h"
 
 //
 // Mapping from 6 bit pattern to ASCII character.
@@ -263,7 +263,7 @@ char *NewBase64Encode(
 	return outputBuffer;
 }
 
-@implementation NSData (Base64)
+@implementation Base64Utils
 
 //
 // dataFromBase64String:

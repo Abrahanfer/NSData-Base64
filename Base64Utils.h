@@ -1,5 +1,5 @@
 //
-//  NSData+Base64.h Version 2.0
+//  Base64Utils.h Version 2.0
 //  base64 version 2.0(Forked from NSData-Base64 project of Matt Gallagher)
 //
 //  Copyright 2009 Matt Gallagher. All rights reserved.
@@ -34,7 +34,7 @@ char *NewBase64Encode(
 	bool separateLines,
 	size_t *outputLength);
 
-@interface NSData (Base64)
+@interface Base64Utils: NSDate
 
 + (NSData *)dataFromBase64String:(NSString *)aString;
 - (NSString *)base64EncodedString;
