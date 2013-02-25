@@ -10,3 +10,5 @@ Acknowledgements
 ----------------
 
 Thanks to l4u for his work in NSData-Base64 project.
+
+[![endorse](http://api.coderwall.com/abrahanfer/endorsecount.png)](http://coderwall.com/abrahanfer)
